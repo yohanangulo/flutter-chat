@@ -44,9 +44,9 @@ Real-time chat application built with Flutter and Firebase.
 
 <div align="center">
 
-| Auth and Chat Screen                                                                                      |
-| --------------------------------------------------------------------------------------------------------- |
-| <img width="250" src="https://github.com/user-attachments/assets/c1d4833f-ad86-45d6-a054-6cf125442be8" /> |
+| Create Account Screen                                                                                    | Auth and Chat Screen                                                                                      | Sign In Screen                                                                                           |
+| -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| <img width="250" src="https://github.com/user-attachments/assets/057e425c-d1d5-4bc9-b788-e419bf27b036" > | <img width="250" src="https://github.com/user-attachments/assets/c1d4833f-ad86-45d6-a054-6cf125442be8" /> | <img width="250" src="https://github.com/user-attachments/assets/ac70a37c-49f6-4bb4-b5db-d11887d0ba95" > |
 
 </div>
 
