@@ -46,6 +46,7 @@ class _NewMessageState extends State<NewMessage> {
     return Padding(
       padding: const EdgeInsets.only(left: 15, right: 1, bottom: 14),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Expanded(
             child: TextField(
@@ -53,7 +54,12 @@ class _NewMessageState extends State<NewMessage> {
               autocorrect: true,
               enableSuggestions: true,
               controller: _messageController,
-              decoration: const InputDecoration(labelText: 'send a message...'),
+              decoration: InputDecoration(
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(999),
+                ),
+                hintText: 'send a message...',
+              ),
             ),
           ),
           IconButton(
