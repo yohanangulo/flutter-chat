@@ -27,30 +27,34 @@ class _ChatScreenState extends State<ChatScreen> {
 
   @override
   initState() {
-    _setupPushNotification();
     super.initState();
+    _setupPushNotification();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return GestureDetector(
+      onTap: FocusScope.of(context).unfocus,
+      child: Scaffold(
       appBar: AppBar(
         title: const Text('Chat'),
         actions: [
           IconButton(
-            onPressed: () {
-              FirebaseAuth.instance.signOut();
-            },
+              onPressed: FirebaseAuth.instance.signOut,
             color: context.theme.colorScheme.primary,
             icon: const Icon(Icons.exit_to_app),
           ),
         ],
       ),
-      body: const Column(
+        body: SafeArea(
+          top: false,
+          child: Column(
         children: [
-          Expanded(child: ChatsMessages()),
+              Expanded(child: const ChatsMessages()),
           NewMessage(),
         ],
+          ),
+        ),
       ),
     );
   }
