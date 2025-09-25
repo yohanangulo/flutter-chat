@@ -36,23 +36,23 @@ class _ChatScreenState extends State<ChatScreen> {
     return GestureDetector(
       onTap: FocusScope.of(context).unfocus,
       child: Scaffold(
-      appBar: AppBar(
-        title: const Text('Chat'),
-        actions: [
-          IconButton(
+        appBar: AppBar(
+          title: const Text('Chat'),
+          actions: [
+            IconButton(
               onPressed: FirebaseAuth.instance.signOut,
-            color: context.theme.colorScheme.primary,
-            icon: const Icon(Icons.exit_to_app),
-          ),
-        ],
-      ),
+              color: context.theme.colorScheme.primary,
+              icon: const Icon(Icons.exit_to_app),
+            ),
+          ],
+        ),
         body: SafeArea(
           top: false,
           child: Column(
-        children: [
+            children: [
               Expanded(child: const ChatsMessages()),
-          NewMessage(),
-        ],
+              NewMessage(),
+            ],
           ),
         ),
       ),
